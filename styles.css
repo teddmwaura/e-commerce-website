@@ -1,0 +1,417 @@
+/*here goes our universal selctor */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+/* section 1 styles */
+
+#section1{
+  height: 100vh;
+  width: 100%;
+}
+
+/*Header styles */
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0; 
+  right: 0;
+  background-color: #fff;
+}
+.container-left{
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.container-left h1{
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: vladimir script;
+  color: #009688;
+}
+.container-right{
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+.container-right a{
+  text-decoration: none;
+}
+.container-right ul{
+  list-style: none;
+  display: flex;
+  padding-right: 2rem;
+}
+.container-right li{
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-left: 4rem;
+  transition: 0.5s ease;
+  position: relative;
+}
+.container-right li:hover{
+  color: #009688;
+}
+.container-right li::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  background-color: #009688;
+  left: 0;
+  transition: 0.5s ease;
+}
+.container-right li:hover::after{
+width: 100%;
+}
+#menu img{
+ height: 35px;
+}
+#menu{
+  display: none;
+}
+#vid img{
+  height: 35px;
+}
+#vid{
+  display: none;
+}
+
+/*body styles */
+
+.div{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.2), #efefef), url(https://ecdn.dhakatribune.net/contents/cache/images/1200x630x1xxxxx1/uploads/dten/2016/06/bigstock-Christmas-Shopping-917620.jpg); /*Here lets load an image directly from the internet */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vid{
+  padding: 200px 100px;
+}
+.vid h2{
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #009688;
+  font-family: roboto;
+}
+.vid h1{
+  font-size: 80px;
+  margin-bottom: 1rem;
+  font-family: roboto;
+}
+.vid span{
+  color: #009688;
+}
+.vid p{
+  font-size: 18px;
+  color: gray;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.vid button{
+  padding: 10px 25px;
+  border: 1px solid #009688;
+  box-shadow: 0 0 4px #009688 0 0 8px #009688 0 0 12px #009688;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.5s ease;
+}
+.vid button:hover{
+  background-color: #009688;
+  color: white;
+  box-shadow: 0 5px 10px #009688;
+}
+
+/*Section 2 styles */
+
+#section2{
+  height: 100vh;
+  width: 100%;
+  padding-top: 4rem;
+}
+.line{
+  text-align: center;
+  height: auto;
+}
+.line h1{
+  font-size: 25px;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: grey;
+  font-family: roboto;
+}
+.line p{
+  font-size: 18px;
+  color: #009688;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.linesman{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  padding: 3rem;
+}
+.grid{
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #333;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.grid:hover{
+  box-shadow: 0 10px 15px #333;
+}
+.grid h2{
+  font-size: 22px;
+  margin-bottom: 1rem;
+  font-family: roboto;
+  color: #009688;
+}
+.grid p{
+  color: gray;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.grid button{
+  padding: 10px 20px;
+  border: 1px solid #009688;
+  box-shadow: 0 0 4px #009688 0 0 8px #009688 0 0 12px #009688;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.5s ease;
+}
+.grid button:hover{
+  background-color: #009688;
+  color: white;
+  box-shadow: 0 5px 10px #009688;
+}
+.img{
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px #333;
+  margin-bottom: 1rem;
+}
+.img img{
+  height: 300px
+}
+
+/*Section 3 styles */
+
+#section3{
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.van{
+  height: 50vh;
+  width: 100%;
+  background:  url(https://ae01.alicdn.com/kf/H4c52f30419494773a1d842e981ae1614l.jpg_640x640q90.jpg); /*Here lets load an image directly from the internet */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+  border-radius: 10px;
+}
+.van p{
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.van h1{
+  font-size: 50px;
+  margin-bottom: 1rem;
+  font-family: roboto;
+  color:#009688
+}
+.van button{
+  padding: 10px 25px;
+  border: 1px solid #009688;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  transition: 0.5s ease;
+  color: #fff;
+}
+.van button:hover{
+  box-shadow: 0 10px 20px #333;
+}
+
+
+/* Section 5 styles */
+
+#section5{
+  padding-bottom: 2rem;
+}
+.logo{
+  padding: 2rem;
+}
+.logo h1{
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: vladimir script;
+  color: #009688;
+}
+.social-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.links{
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 10px 15px #333;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.links:hover{
+  box-shadow: 0 5px 10px #333;
+}
+.links img{
+  height: 30px;
+}
+
+/*Let's Now make our website responsive using media querries */
+
+@media screen and (max-width: 770px)
+{
+  /* section 1 */
+
+  .div{
+    height: auto;
+  }
+  .vid{
+    padding: 100px 50px;
+  }
+  .vid h2{
+    font-size: 20px;
+  }    
+  .vid h1{
+    font-size: 40px;
+  }
+  .container-right{
+  position: fixed;
+  background-color: #009688;
+  top: 0;
+  right: -250px;
+  bottom: 0;
+  height: 100vh;
+  width: 50%;
+  border-radius: 5px;
+  /*display: none;*/
+  transition: 1s ease;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  .container-right ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+    .container-right li{
+      letter-spacing: 1px;
+      margin-bottom: 4rem;
+    }
+    .img img{
+      height: 200px
+    }
+    .img{
+      width: 90%;
+      margin-left: 1rem;
+    }
+    .grid{
+      width: 90%;
+      margin-left: 1rem;
+    }
+    #menu{
+      display: initial;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+    #vid{
+      display: initial;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+
+    }
+  
+ 
+
+  /* section 2 */
+
+  .linesman{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 1rem;
+  }
+  #section2{
+    height: auto;
+    padding-top: 1rem;
+  }
+
+   /* section 3 */
+
+   .van p{
+  font-size: 18px;
+}
+.van h1{
+  font-size: 30px;
+}
+#section3{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.van{
+  height: 40vh;
+  padding-top: 40px;
+}
+
+/*section 5 */
+
+#section5{
+  padding-top: 2rem;
+}
+.links{
+  margin-left: 1rem;
+  height: 40px;
+  width: 40px;
+}
+.logo{
+  padding: 1rem;
+}
+}
+
+
+
